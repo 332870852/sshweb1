@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-9-25 15:15:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.abc.sshweb1.model.Permission" table="sb_permissions" >
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="resource" type="java.lang.String">
+            <column name="resource" />
+        </property>
+        <property name="state" type="java.lang.Integer">
+            <column name="state" />
+        </property>
+    </class>
+</hibernate-mapping>

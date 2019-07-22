@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-9-22 18:31:21 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.abc.sshweb1.model.User" table="sb_users">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="username" type="java.lang.String">
+            <column name="username" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+        <property name="state" type="java.lang.Integer">
+            <column name="state" />
+        </property>
+        <property name="regDate" type="java.util.Date">
+            <column name="reg_date" />
+        </property>
+        <set name="roles" table="sb_role" lazy="false">
+        	<key>
+        		<column name="user_id" />
+        	</key>
+        	<many-to-many class="cn.abc.sshweb1.model.Role" column="role_id"></many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

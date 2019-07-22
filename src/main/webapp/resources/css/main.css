@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body{
+	font: 12px/1.2em Microsoft YaHei;
+}
+
+a{
+	text-decoration: none;
+}
+.pd3{
+	padding: 3px;
+}
+.datagrid-pager{height: 31px;}
+
+.sshweb_sidebar .sshweb_side_tree span.tree-title{width: 115px;}
+
+.sshweb_sidebar .sshweb_side_tree a {display: block; width: 110px;}
+
+.sshweb_header{
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px #95b8e7 solid;
+	background: url(../img/bg_header.jpg) bottom repeat-x;
+	z-index: 0;
+}
+
+.sshweb_header_left{
+	position: absolute;
+	z-index: 1,left:15px;
+	top: 0px;
+}
+
+.sshweb_header_left h1{
+	color: #fff;
+	font: 20px/20px Verdana;
+}
+
+.sshweb_header_right {
+	position: absolute;
+	z-index: 1;
+	right: 5px;
+	top: 0px;
+	color: #fff;
+	text-align: right;
+}
+
+.sshweb_header_right p{
+	line-height: 0.7em;
+}
+
+.sshweb_header_right a{
+	color: #fff;
+	margin: 0 5px;
+}
+
+.sshweb_sidebar{
+	width: 160px;
+}
+
+.sshweb_footer{
+	height: 20px;
+	padding: 5px;
+	text-align: center;
+	overflow: hidden;
+	background: #e0ecff;
+}
